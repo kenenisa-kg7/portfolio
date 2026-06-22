@@ -7,6 +7,7 @@ import Skills from "../components/Skills";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 
 export default function Home() {
   const techs = ["React", "Next.js", "Node.js", "PostgreSQL", "TypeScript"];
@@ -15,7 +16,7 @@ export default function Home() {
     <main style={{ minHeight: "100vh", display: "flex", flexDirection: "column", overflowX: "hidden", width: "100%" }}>
 
       {/* HERO SECTION */}
-      <section style={{ minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center", padding: "0 40px", position: "relative" }}>
+      <section style={{ minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center", padding: "80px 40px 0 40px", position: "relative" }}>
 
         {/* Background gradient */}
         <div style={{
@@ -185,6 +186,7 @@ export default function Home() {
       <Projects />
       <Contact />
       <Footer/>
+      <Navbar/>
 
     </main>
   );

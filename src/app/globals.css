@@ -14,3 +14,11 @@ html, body {
   overflow-x: hidden;
   width: 100%;
 }
+@media (max-width: 768px) {
+  .desktop-nav {
+    display: none !important;
+  }
+  .mobile-menu-btn {
+    display: block !important;
+  }
+}
