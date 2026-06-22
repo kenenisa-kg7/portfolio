@@ -1,6 +1,6 @@
-
 "use client";
- 
+ import About from "../components/About";
+ import Skills from "@/components/skills";
 import { motion } from "framer-motion";
 import { ArrowDown } from "lucide-react";
  
@@ -8,7 +8,7 @@ export default function Home() {
   const techs = ["React", "Next.js", "Node.js", "PostgreSQL", "TypeScript"];
  
   return (
-    <main className="min-h-screen flex flex-col">
+    <main style={{ minHeight: "100vh", display: "flex", flexDirection: "column", overflowX: "hidden", width: "100%" }}>
       <section className="min-h-screen flex flex-col items-center justify-center text-center px-6 relative">
  
         {/* Background gradient */}
@@ -138,6 +138,8 @@ export default function Home() {
         </motion.div>
  
       </section>
+      <About/>
+      <Skills/>
     </main>
   );
 }
